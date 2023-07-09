@@ -12,6 +12,7 @@ def get_poem_from_user(message: str) -> str:
         user_poem = input(message)
 
         if len(user_poem.split()) == 0:
+            print('Нельзя вводить пустую строку!')
             continue
         else:
             flag = False
